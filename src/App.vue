@@ -1,13 +1,15 @@
 <template>
 <h1>{{title}}</h1>
-<input type="text" ref="name">
-<button @click="handleClick">Click me</button>
+<Model/>
 </template>
 
 <script>
 
+import Model from './components/Model.vue';
+
 export default {
   name: "App",
+  components: {Model},
   data(){
     return{
       title:'My first Vue App :)',
