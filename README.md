@@ -25,4 +25,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Progress Trackers
 | Date | Description |
 | --- | ----------- |
+| 2021/05/06  | Completed CSS Scope with Vue and Props on Chapter 5/12 Will continue later |
 | 2021/05/06  | Starting to keep track of progress via Readme. Currently on Lesson 5/12 on the YT Series. |
