@@ -1,6 +1,7 @@
 <template>
   <div class="backdrop">
       <div class="model">
+          <h1>Model Title</h1>
           <p>Model Content</p>
       </div>
   </div>
@@ -25,6 +26,14 @@ export default {};
         background: rgba(0,0,0,0.5);
         width: 100%;
         height: 100%;
+    }
+    .model h1{
+        color: #03cfb4;
+        border: none;
+        padding: 0;
+    }
+    .model p{
+        font-style: normal;
     }
 
 </style>
