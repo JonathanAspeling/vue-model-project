@@ -1,14 +1,16 @@
 <template>
   <div class="backdrop">
-      <div class="model">
-          <h1>Model Title</h1>
-          <p>Model Content</p>
+      <div class="model" :class="{sale: theme === 'sale'}">
+          <h1>{{header}}</h1>
+          <p>{{text}}</p>
       </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+    props:['header', 'text', 'theme']    
+}
 </script>
 
 <style>
@@ -34,6 +36,13 @@ export default {};
     }
     .model p{
         font-style: normal;
+    }
+    .model.sale {
+        background: crimson;
+        color: white;
+    }
+    .model.sale h1{
+color: white;
     }
 
 </style>
