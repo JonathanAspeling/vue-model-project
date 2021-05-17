@@ -27,3 +27,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | --- | ----------- |
 | 2021/05/06  | Completed CSS Scope with Vue and Props on Chapter 5/12 Will continue later |
 | 2021/05/06  | Starting to keep track of progress via Readme. Currently on Lesson 5/12 on the YT Series. |
+|2021/05/17|It has been a couple of tough weeks energy wise for studies, but I am back in the saddle this morning! Continuing with 5/12|
