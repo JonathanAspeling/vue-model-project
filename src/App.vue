@@ -4,7 +4,7 @@
 <Model :header="header" :text="text" :theme="theme" @close="toggleModal" />
 </div>
 <p></p>
-<button @click="toggleModal">Open Model</button>
+<button @click.alt="toggleModal">Open Model(Alt)</button>
 </template>
 
 <script>
