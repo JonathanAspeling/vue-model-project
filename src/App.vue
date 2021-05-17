@@ -10,12 +10,23 @@
       <p>Text Body Here</p>
     </Model>
   </div>
+
+  <div v-if="showModalTwo">
+    <Model @close="toggleModalTwo">
+      <slot> 
+        <h1>It's not about the money</h1>
+        <p>It's about sending a message</p>
+      </slot>
+    </Model>
+  </div>
   <p></p>
   <button @click.alt="toggleModal">Open Model(Alt)</button>
+  <button @click="toggleModalTwo">Suprise!</button>
 </template>
 
 <script>
 import Model from "./components/Model.vue";
+
 
 export default {
   name: "App",
@@ -23,10 +34,9 @@ export default {
   data() {
     return {
       title: "My first Vue App :)",
-      header: "Sign-up for the give away!",
-      text: "Grab your ninja swag for half price",
       theme: "sale",
       showModal: false,
+      showModalTwo: false,
     };
   },
   methods: {
@@ -37,6 +47,9 @@ export default {
     },
     toggleModal() {
       this.showModal = !this.showModal;
+    },
+    toggleModalTwo() {
+      this.showModalTwo = !this.showModalTwo;
     },
   },
 };
@@ -55,5 +68,8 @@ h1 {
   border-bottom: 1px solid #ddd;
   display: inline-block;
   padding-bottom: 10px;
+}
+button {
+  margin: 10px;
 }
 </style>
