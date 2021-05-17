@@ -1,6 +1,10 @@
 <template>
 <h1>{{title}}</h1>
-<Model :header="header" :text="text" :theme="theme" />
+<div v-if="showModal">
+<Model :header="header" :text="text" :theme="theme" @close="toggleModal" />
+</div>
+<p></p>
+<button @click="toggleModal">Open Model</button>
 </template>
 
 <script>
@@ -16,6 +20,7 @@ export default {
       header:'Sign-up for the give away!',
       text:'Grab your ninja swag for half price',
       theme:'sale',
+      showModal: false
     }
   },
   methods:{
@@ -23,6 +28,9 @@ export default {
       console.log(this.$refs.name)
       this.$refs.name.classList.add('active')
       this.$refs.name.focus()
+    },
+    toggleModal(){
+      this.showModal = !this.showModal
     }
 
   }
