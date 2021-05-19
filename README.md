@@ -29,3 +29,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | 2021/05/06  | Starting to keep track of progress via Readme. Currently on Lesson 5/12 on the YT Series. |
 |2021/05/17|It has been a couple of tough weeks energy wise for studies, but I am back in the saddle this morning! Continuing with 5/12|
 |2021/05/17|Completed Chapter 5/12!|
+|2021/05/19|This Project is completed - at 5/12 one has laid the base knowledge with the next couple being a collection of projects looks to me.|
